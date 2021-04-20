@@ -2,41 +2,37 @@
   <div id="app">
     <Navbar />
     
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-    <div class="container">
-
-<!-- TODO 内容 -->
-
-      <Footbar />
-    </div>
+    <Service />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue'
-import Footbar from './components/Footbar.vue'
+// import Footbar from './components/Footbar.vue'
+import Service from './pages/Service.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    // HelloWorld,
     Navbar,
-    Footbar
+    // Footbar,
+    Service
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  /* font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #2c3e50; 
+  margin-top: 60px; */
 }
+
 
 #footer {
   text-align: left;
