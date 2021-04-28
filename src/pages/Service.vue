@@ -67,8 +67,6 @@
           </b-card-body>
         </b-card>
       </b-card-group>
-
-      <Footbar />
     </div>
   </div>
 </template>
@@ -103,7 +101,7 @@ html {
 </style>
 
 <script>
-import Footbar from '../components/Footbar.vue'
+// import Footbar from '../components/Footbar.vue'
 
 export default {
 
@@ -112,7 +110,7 @@ export default {
     return {};
   },
   components: {
-    Footbar
+    // Footbar
   }
 };
 </script>

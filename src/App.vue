@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <Navbar />
-    
-    <Service />
+    <!-- <Service /> -->
+    <router-view />
+    <Footbar />
   </div>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-import Navbar from './components/Navbar.vue'
-// import Footbar from './components/Footbar.vue'
-import Service from './pages/Service.vue'
+import Navbar from './components/Navbar'
+import Footbar from './components/Footbar'
+// import Service from './pages/Service.vue'
 
 export default {
   name: 'App',
   components: {
     // HelloWorld,
     Navbar,
-    // Footbar,
-    Service
+    Footbar
+    // Service
   }
 }
 </script>

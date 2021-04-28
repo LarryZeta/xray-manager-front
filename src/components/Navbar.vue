@@ -7,11 +7,11 @@
 
       <b-collapse id="nav-collapse" is-nav>
         <b-navbar-nav>
-          <b-nav-item href="#">Service</b-nav-item>
-          <b-nav-item href="#">Clients</b-nav-item>
-          <b-nav-item href="#">Orders</b-nav-item>
-          <b-nav-item href="#">Users</b-nav-item>
-          <b-nav-item href="#">Accounts</b-nav-item>
+          <b-nav-item :to="'/service'">Service</b-nav-item>
+          <b-nav-item :to="'/clients'">Clients</b-nav-item>
+          <b-nav-item :to="'/orders'">Orders</b-nav-item>
+          <b-nav-item :to="'/users'">Users</b-nav-item>
+          <b-nav-item :to="'/accounts'">Accounts</b-nav-item>
         </b-navbar-nav>
 
         <!-- Right aligned nav items -->
@@ -21,7 +21,7 @@
             <template #button-content>
               <span>{{ session.loginUser }}</span>
             </template>
-            <b-dropdown-item href="#">Profile</b-dropdown-item>
+            <b-dropdown-item href="#/profile">Profile</b-dropdown-item>
             <b-dropdown-item href="#">Sign Out</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
